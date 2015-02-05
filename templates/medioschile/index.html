@@ -1,0 +1,9 @@
+{% if escrito_list %}
+    <ul>
+    {% for medio in escrito_list %}
+        <li><a href="/medioschile/{{ medio.id }}/">{{ medio.medio }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No weis.</p>
+{% endif %}
